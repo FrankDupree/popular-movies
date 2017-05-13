@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.popularmovies.MainActivity">
+    <item android:id="@+id/nav_setting"
+        android:title="@string/action_settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:id="@+id/nav_refresh"
+        android:title="@string/action_settings"
+        android:icon="@android:drawable/stat_notify_sync_noanim"
+        app:showAsAction="ifRoom"></item>
+</menu>

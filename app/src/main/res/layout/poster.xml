@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/backdrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/movie_releasedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintLeft_toRightOf="@+id/backdrop"
+        android:layout_marginLeft="21dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <RatingBar
+        android:id="@+id/movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-8dp"
+        android:stepSize="0.5"
+        android:numStars="4"
+        app:layout_constraintLeft_toLeftOf="@+id/movie_releasedate"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/movie_releasedate" />
+
+    <Button
+        android:id="@+id/btnreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkreview"
+        android:background="@drawable/list_selector"
+        android:textColor="#fff"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/movie_rating"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/movie_rating" />
+
+</android.support.constraint.ConstraintLayout>

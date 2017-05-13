@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+    <ListPreference
+        android:defaultValue="@string/tmdb_popular"
+        android:entries="@array/list_option"
+        android:entryValues="@array/list_value"
+        android:key="@string/tmdb_sort_type"
+        android:title="@string/tmdb_sort_type_desc" />
+
+</PreferenceScreen>
