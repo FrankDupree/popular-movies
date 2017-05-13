@@ -1,5 +1,5 @@
-# Popular-Movies-Stage-1
-Udacity Android Nanodegree project #1
+# Popular-Movies-Stage-2
+Udacity Android Nanodegree project #2
 
 
 Instructions for user:
